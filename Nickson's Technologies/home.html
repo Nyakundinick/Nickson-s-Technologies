@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon/favicon.jfif" type="image/x-icon">
+    <title>Nickson's</title>
+    <script>
+        function showContent(id) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+
+        function loadIframe(url) {
+            document.getElementById('social-iframe').src = url;
+            showContent('social');
+        }
+
+        function toggleMap() {
+            var mapContainer = document.querySelector('.map-container');
+            if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+                mapContainer.style.display = 'block';
+            } else {
+                mapContainer.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)" onclick="showContent('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showContent('about')">About</a>
+        <a href="javascript:void(0)" onclick="showContent('projects')">Projects</a>
+        <a href="javascript:void(0)" onclick="showContent('contact')">Contact</a>
+        <a href="javascript:void(0)" onclick="showContent('settings')">Settings</a>
+    </nav>
+    
+    <img src="/logo/logo.jfif" alt="Nickson's Logo" class="logo">
+
+    <div class="container">
+        <div id="home" class="content active">
+            <h1>Home</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/images/tech 1.jfif" alt="Design Inspiration">
+                    <div class="card-content">
+                        <h3>"Smart technology for a smarter world."
+                            "Building the digital future, one line of code at a time."
+                            "Where tech dreams become reality."</h3>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/tech 2.jfif" alt="API Design">
+                    <div class="card-content">
+                        <h3>"Leading the charge in technological evolution."
+                            "Redefining possibilities with advanced technology."
+                            Innovate today, transform tomorrow."
+                            "Pioneering the next generation of tech."
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/tech 3.jfif" alt="Promotion">
+                    <div class="card-content">
+                        <h3>"Where imagination meets innovation in tech."
+                            "Transforming ideas into digital realities."</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/tech 4.jfif" alt="Podcast">
+                    <div class="card-content">
+                        <h3>"Revolutionizing the digital frontier with cutting-edge tech innovations."
+                            "Empowering the future with seamless, intelligent technology solutions."
+                            "Unlocking new possibilities with state-of-the-art tech advancements"</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/tech 5.jfif" alt="Cheat Sheet">
+                    <div class="card-content">
+                        <h3>"Driving progress with smart, efficient, and scalable technology."
+                            "Transforming ideas into reality with groundbreaking tech expertise."</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/tech 6.jfif" alt="CSS Hover Effect">
+                    <div class="card-content">
+                        <h3>"Pushing the boundaries of innovation with next-gen technology."
+                            "Empowering the future with cutting-edge solutions."
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about" class="content">
+            <h1>About</h1>
+            <div class="card">
+                <div class="card-content">
+                    <h3>About the Company</h3>
+                    <p>
+                        Innovatech Solutions is a cutting-edge technology company dedicated to driving innovation and delivering exceptional digital products. 
+                        With a focus on artificial intelligence, cloud computing, and cybersecurity, Innovatech Solutions empowers businesses to transform their operations and achieve new heights of efficiency. 
+                        Our team of experts is committed to pushing the boundaries of technology and providing solutions that are both scalable and secure.
+                    </p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Our Mission</h3>
+                        <p>Nickson's Tech Company is dedicated to innovation and excellence...</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Our Vision</h3>
+                        <p>We envision a future where technology transforms industries and improves lives...</p>
+                    </div>
+                </div>       
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Our Values</h3>
+                        <p>We are committed to integrity, collaboration, and innovation...</p>
+                    </div>
+                </div>             
+            </div>
+        </div>
+
+        <div id="projects" class="content">
+            <h1>Projects</h1>
+            <div class="project-container">
+                <div class="project">
+                    <h2>Project Alpha</h2>
+                    <p>Project Alpha is a cutting-edge AI development focused on natural language processing. The team has been working on improving the accuracy and efficiency of machine learning algorithms.</p>
+                    <p>The project aims to integrate AI technology into various applications, making it accessible to a broader audience. This includes developing user-friendly interfaces and tools for non-experts.</p>
+                    <p>Project Alpha has the potential to revolutionize industries by automating complex tasks and providing insightful data analysis. The team is dedicated to ensuring ethical AI practices.</p>
+                </div>
+                <div class="project">
+                    <h2>Project Beta</h2>
+                    <p>Project Beta is a revolutionary blockchain initiative aimed at enhancing transaction security. The team is developing a decentralized platform to ensure transparency and trust.</p>
+                    <p>The project focuses on creating a user-friendly experience while maintaining high security standards. It aims to simplify blockchain technology for everyday use.</p>
+                    <p>Project Beta has the potential to transform various sectors, including finance, healthcare, and supply chain management, by providing a secure and efficient transaction system.</p>
+                </div>
+                <div class="project">
+                    <h2>Project Gamma</h2>
+                    <p>Project Gamma is an innovative IoT solution designed to connect and manage smart devices. The project focuses on creating a seamless integration between different IoT devices.</p>
+                    <p>The team is working on enhancing connectivity, reducing latency, and improving user interfaces. The goal is to make IoT technology more accessible and efficient.</p>
+                    <p>Project Gamma aims to revolutionize smart homes and cities by providing a comprehensive and user-friendly IoT management platform. The project emphasizes security and scalability.</p>
+                </div>
+                <div class="project">
+                    <h2>Project Delta</h2>
+                    <p>Project Delta is a groundbreaking virtual reality (VR) platform designed to enhance immersive experiences. The team is focusing on improving VR hardware and software integration.</p>
+                    <p>The project aims to create realistic and engaging VR environments for various applications, including gaming, education, and training. The team is dedicated to pushing the boundaries of VR technology.</p>
+                    <p>Project Delta has the potential to revolutionize how we interact with digital content by providing an immersive and interactive platform. The team is committed to making VR more accessible.</p>
+                </div>
+                <div class="project">
+                    <h2>Project Epsilon</h2>
+                    <p>Project Epsilon is an advanced cybersecurity initiative focused on developing innovative security solutions. The team is working on creating proactive measures to prevent cyber threats.</p>
+                    <p>The project aims to integrate AI and machine learning to detect and respond to threats in real-time. The team is dedicated to protecting sensitive data and ensuring user privacy.</p>
+                    <p>Project Epsilon has the potential to set new standards in cybersecurity by providing robust and adaptive security measures. The team is committed to staying ahead of emerging threats.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="content">
+            <h1>Contact</h1>
+            <div class="contact-page">
+                <div class="contact-info">
+                    <h2>Talk to Us</h2>
+                    <p><strong>Telephone:</strong> +254 45156144</p>
+                    <p><strong>Email:</strong> nickson@technologies.co.ke</p>
+                    <p><strong>Landline:</strong> 0200176543</p>
+                    <div class="social-icons">
+                        <a href="javascript:void(0)" onclick="loadIframe('https://www.whatsapp.com')"><img src="https://img.icons8.com/fluent/48/000000/whatsapp.png" alt="WhatsApp"/></a>
+                        <a href="javascript:void(0)" onclick="loadIframe('https://www.facebook.com')"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook"/></a>
+                        <a href="javascript:void(0)" onclick="loadIframe('https://www.instagram.com')"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"/></a>
+                        <a href="javascript:void(0)" onclick="loadIframe('https://www.twitter.com')"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"/></a>
+                        <a href="javascript:void(0)" onclick="loadIframe('https://www.telegram.org')"><img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" alt="Telegram"/></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <form>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="name" placeholder="Names">
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <textarea name="message" placeholder="Message..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <button onclick="toggleMap()">Toggle Map</button>
+            <div class="map-wrapper">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.445466280096!2d34.857684673847274!3d-0.7833103992090755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b41d860f195db%3A0x4bb259d796c039ef!2sNyanturago%20Sports%20Complex!5e0!3m2!1ssw!2ske!4v1719004759676!5m2!1ssw!2ske" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+        <div id="settings" class="content">
+            <h1>Settings</h1>
+            <main> <section class="settings">
+                <h2>General Settings</h2>
+                <form id="general-settings">
+                    <label for="theme">Theme:</label>
+                    <select id="theme" name="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="blue">Blue</option>
+                    </select>
+    
+                    <label for="language">Language:</label>
+                    <select id="language" name="language">
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                    </select>
+    
+                    <label for="notifications">Notifications:</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+    
+                    <button type="submit">Save Settings</button>
+                </form>
+            </section>
+    
+            <section class="account">
+                <h2>Account Management</h2>
+                <form id="account-management">
+                    <label for="create-account">Create Account:</label>
+                    <input type="email" id="create-account" name="create-account" placeholder="Enter email">
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+    
+                    <button type="submit">Create Account</button>
+                </form>
+    
+                <form id="delete-account">
+                    <label for="delete-email">Email:</label>
+                    <input type="email" id="delete-email" name="delete-email" placeholder="Enter email">
+    
+                    <label for="confirm-delete">Confirm Deletion:</label>
+                    <input type="checkbox" id="confirm-delete" name="confirm-delete">
+    
+                    <button type="submit">Delete Account</button>
+                </form>
+            </section>
+        </main>
+        </div>
+
+        <div id="social" class="content">
+            <iframe id="social-iframe" width="100%" height="600px" style="border:0;"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> Nickson's. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        
+        function showContent(id) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+
+        function loadIframe(url) {
+            document.getElementById('social-iframe').src = url;
+            showContent('social');
+        }
+
+        function toggleMap() {
+            var mapContainer = document.querySelector('.map-container');
+            if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+                mapContainer.style.display = 'block';
+            } else {
+                mapContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
